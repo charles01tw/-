@@ -26,10 +26,6 @@ integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfoo
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
-</html>
- 
-<!DOCTYPE html>
-<html>
   <head>
     <script src="https://unpkg.com/konva@5.0.3/konva.min.js"></script>
     <meta charset="utf-8" />
@@ -74,6 +70,7 @@ integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifw
       stage.add(layer);
     </script>
   </body>
+
 </html>
 
 
