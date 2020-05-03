@@ -9,37 +9,6 @@
 integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
  <title>上課紀錄</title>
  </head>
- <body>
-    <h1>Konva's circle</h1>
-    <script src="https://unpkg.com/konva@3.4.1/konva.min.js"></script>
-    <div id="container"></div>
-    <script>
-        // first we need to create a stage
-        var stage = new Konva.Stage({
-        container: 'container',   // id of container <div>
-        width: 160,
-        height: 160
-        });
-        // then create a layer
-        var layer = new Konva.Layer();
-        // create our shape
-        var circle = new Konva.Circle({
-         x: stage.width() / 2,   // x position of the center
-        y: stage.height() / 2,  // y position of the center
-         radius: 70,             // circle radius
-         fill: 'red',            // color to fill the area
-        stroke: 'black',        // color to draw the line
-         strokeWidth: 4          // line width
-        });
-        // add the shape to the layer
-        layer.add(circle);
-        // add the layer to the stage
-        stage.add(layer);
-        // draw the image
-        layer.draw();
-    </script>
-    </body>
-
     <body>
         <h2>Konva</h2>
         <script src="https://unpkg.com/konva@3.4.1/konva.min.js"></script>
@@ -93,5 +62,11 @@ layer.add(hexagon);
 stage.add(layer);
 layer.draw();
         </script>
-    </body>  
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>  
 </html>
