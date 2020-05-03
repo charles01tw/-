@@ -31,5 +31,47 @@ integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfoo
 integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <body>
 <html>
- 
+     <meta charset="utf-8" />
+    <title>Konva Ellipse Demo</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script>
+      var width = window.innerWidth;
+      var height = window.innerHeight;
+
+      var stage = new Konva.Stage({
+        container: 'container',
+        width: width,
+        height: height
+      });
+
+      var layer = new Konva.Layer();
+
+      var oval = new Konva.Ellipse({
+        x: stage.width() / 2,
+        y: stage.height() / 2,
+        radiusX: 100,
+        radiusY: 50,
+        fill: 'yellow',
+        stroke: 'black',
+        strokeWidth: 4
+      });
+
+      // add the shape to the layer
+      layer.add(oval);
+
+      // add the layer to the stage
+      stage.add(layer);
+    </script>
+  </body>
+</html>
 
