@@ -10,7 +10,61 @@ integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9If
  <title>Hello, world!</title>
  </head>
  <body>
-    <h2>Konva</h2>
+    <h1>Konva</h1>
+    <script src="https://unpkg.com/konva@3.4.1/konva.min.js"></script>
+    <div id="container"></div>
+    <script>
+        // first we need to create a stage
+var stage = new Konva.Stage({
+  container: 'container',   // id of container <div>
+  width: 500,
+  height: 160
+});
+
+var layer = new Konva.Layer();
+
+var triangle = new Konva.RegularPolygon({
+  x: 80,
+  y: 100,
+  sides: 3,
+  radius: 70,
+  fill: 'red',
+  stroke: 'brown',
+  strokeWidth: 2
+});
+
+var pentagon = new Konva.RegularPolygon({
+  x: 240,
+  y: 80,
+  sides: 5,
+  radius: 70,
+  fill: 'green',
+  stroke: 'purple',
+  strokeWidth: 2
+});
+
+var hexagon = new Konva.RegularPolygon({
+  x: 410,
+  y: 75,
+  sides: 6,
+  radius: 70,
+  fill: 'blue',
+  stroke: 'orange',
+  strokeWidth: 2
+});
+
+
+// add the shapes to the layer
+layer.add(triangle);
+layer.add(pentagon);
+layer.add(hexagon);
+
+stage.add(layer);
+layer.draw();
+    </script>
+ </body>
+ <body>
+    <h2>Konva's circle</h2>
     <script src="https://unpkg.com/konva@3.4.1/konva.min.js"></script>
     <div id="container"></div>
     <script>
