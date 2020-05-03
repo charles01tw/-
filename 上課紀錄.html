@@ -1,1 +1,42 @@
-
+<!doctype html>
+<html lang="en">
+ <head>
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ <title>Hello, world!</title>
+ </head>
+ <body>
+    <h2>Konva</h2>
+    <script src="https://unpkg.com/konva@3.4.1/konva.min.js"></script>
+    <div id="container"></div>
+    <script>
+        // first we need to create a stage
+        var stage = new Konva.Stage({
+        container: 'container',   // id of container <div>
+        width: 160,
+        height: 160
+        });
+        // then create a layer
+        var layer = new Konva.Layer();
+        // create our shape
+        var circle = new Konva.Circle({
+         x: stage.width() / 2,   // x position of the center
+        y: stage.height() / 2,  // y position of the center
+         radius: 70,             // circle radius
+         fill: 'red',            // color to fill the area
+        stroke: 'black',        // color to draw the line
+         strokeWidth: 4          // line width
+        });
+        // add the shape to the layer
+        layer.add(circle);
+        // add the layer to the stage
+        stage.add(layer);
+        // draw the image
+        layer.draw();
+    </script>
+    </body>  
+</html>
